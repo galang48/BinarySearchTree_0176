@@ -37,7 +37,15 @@ public:
 
         Node* parent = nullptr;
         Node* currentNode = nullptr;
-        search(element, parent, currentNode); // Locate the node which will be the parent of the node to be ins
+        search(element, parent, currentNode); // Locate the node which will be the parent of the node to be insert
+
+        if (parent == nullptr) // if the parent is null (Tree is empty) 
+        {
+            ROOT = newNode; // Mark the newnode as ROOT
+            return; // Exit
+        }
+
+        
     }
 };
 int main()
