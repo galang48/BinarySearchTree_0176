@@ -32,6 +32,7 @@ public:
     {
         Node* newNode = new Node(element, nullptr, nullptr); // Allocate memory for the new mode
         newNode->info = element; // Assign value to the data field of the new node
+        newNode->leftchild = nullptr; // make the left child of the new node point to null
     }
 };
 int main()
